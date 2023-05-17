@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.31d6cfe0.css",
+    "main.js": "/static/js/main.6f3d58c4.js",
+    "static/media/pragmatic_energy.png": "/static/media/pragmatic_energy.e5cd67e7cceeae2c6954.png",
+    "static/media/unreal_estate.png": "/static/media/unreal_estate.15c7b3363c4a171ab1e4.png",
+    "static/media/tales.jpeg": "/static/media/tales.66b1ab677017db9c8944.jpeg",
+    "static/media/taskmaster.png": "/static/media/taskmaster.8dc20bf34e0fc3a57735.png",
+    "static/media/psql.png": "/static/media/psql.956d86df94597f61f25b.png",
+    "static/media/react.png": "/static/media/react.d458335a137959c5eca3.png",
+    "static/media/github.png": "/static/media/github.76f37636c0c80cf5000a.png",
+    "static/media/html.png": "/static/media/html.b5ffed8c64a84d5de3c8.png",
+    "static/media/css.png": "/static/media/css.7318e0e360846c80f172.png",
+    "static/media/js.png": "/static/media/js.29ec62db9d63d9773e26.png",
+    "static/media/logo.png": "/static/media/logo.f871a70f9ddb2c35a484.png",
+    "index.html": "/index.html",
+    "main.6f3d58c4.js.map": "/static/js/main.6f3d58c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.6f3d58c4.js"
+  ]
+}
