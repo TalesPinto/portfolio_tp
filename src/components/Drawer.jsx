@@ -82,7 +82,13 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <div style={{ display: "flex", marginLeft: "auto" }}>
-            <Link to="heading-id" smooth={true} duration={500} offset={-140}>
+            <Link
+              to="heading-id"
+              smooth={true}
+              duration={500}
+              offset={-140}
+              style={{ cursor: "pointer" }}
+            >
               <Box
                 component="img"
                 sx={{

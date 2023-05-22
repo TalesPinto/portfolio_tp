@@ -44,103 +44,219 @@ export default function Projects() {
         03. Projects
       </Typography>
 
-      <Grid container spacing={6} sx={{ textAlign: "right", paddingBottom: 3 }}>
-        <Grid item xs={12} md={4}>
-          <Box
+      {isSmallScreen ? (
+        <Grid
+          container
+          spacing={6}
+          sx={{ textAlign: "left", paddingBottom: 3 }}
+        >
+          <Grid item xs={12} md={4}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                height: "100%",
+              }}
+            >
+              <Divider color="#a8b2d1" orientation="horizontal" flexItem />
+              <Typography
+                color="#ccd6f6"
+                sx={{
+                  fontFamily: "VT323",
+                  fontWeight: "600",
+                  fontSize: 30,
+                  paddingBottom: 3,
+                  paddingTop: 3,
+                }}
+              >
+                Pragmatic Energy
+              </Typography>
+              <Typography color="#a8b2d1" sx={{ fontSize: 20 }}>
+                A full-stack web application that helps users to find the
+                nearest petrol stations based on their current location.
+                Additionally, users can browse the map to find petrol stations
+                anywhere in Australia, which can save users time and money.
+              </Typography>
+
+              <Grid
+                container
+                spacing={6}
+                sx={{
+                  paddingTop: 3,
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <Grid
+                  item
+                  xs={6}
+                  md={6}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "flex-end",
+                    transition: "transform 0.2s ease-in-out",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                    },
+                  }}
+                >
+                  <Tooltip title="GitHub Repository" placement="bottom">
+                    <a href="https://github.com/TalesPinto/pragmatic-energy">
+                      <img
+                        src={github}
+                        alt="github-pragmatic-energy-app"
+                        style={{ height: "35px" }}
+                      />
+                    </a>
+                  </Tooltip>
+                </Grid>
+                <Grid
+                  item
+                  xs={6}
+                  md={6}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "flex-start",
+                    transition: "transform 0.2s ease-in-out",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                    },
+                  }}
+                >
+                  <Tooltip title="Pragmatic Energy WebPage" placement="bottom">
+                    <a href="https://pragmatic-energy.cyclic.app/">
+                      <img src={web} alt="web" style={{ height: "35px" }} />
+                    </a>
+                  </Tooltip>
+                </Grid>
+              </Grid>
+            </Box>
+          </Grid>
+
+          <Grid
+            item
+            xs={12}
+            md={8}
             sx={{
               display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              height: "100%",
+              justifyContent: "flex-start",
             }}
           >
-            <Divider color="#a8b2d1" orientation="horizontal" flexItem />
-            <Typography
-              color="#ccd6f6"
-              sx={{
-                fontFamily: "VT323",
-                fontWeight: "600",
-                fontSize: 30,
-                paddingBottom: 3,
-                paddingTop: 3,
-              }}
-            >
-              Pragmatic Energy
-            </Typography>
-            <Typography color="#a8b2d1" sx={{ fontSize: 20 }}>
-              A full-stack web application that helps users to find the nearest
-              petrol stations based on their current location. Additionally,
-              users can browse the map to find petrol stations anywhere in
-              Australia, which can save users time and money.
-            </Typography>
-
-            <Grid
-              container
-              spacing={6}
-              sx={{
-                paddingTop: 3,
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <Grid
-                item
-                xs={6}
-                md={6}
-                sx={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  transition: "transform 0.2s ease-in-out",
-                  "&:hover": {
-                    transform: "scale(1.05)",
-                  },
-                }}
-              >
-                <Tooltip title="Coming soon..." placement="bottom">
-                  <img
-                    src={github}
-                    alt="github-pragmatic-energy-app"
-                    style={{ height: "35px" }}
-                  />
-                </Tooltip>
-              </Grid>
-              <Grid
-                item
-                xs={6}
-                md={6}
-                sx={{
-                  display: "flex",
-                  justifyContent: "flex-start",
-                  transition: "transform 0.2s ease-in-out",
-                  "&:hover": {
-                    transform: "scale(1.05)",
-                  },
-                }}
-              >
-                <Tooltip title="Coming soon..." placement="bottom">
-                  <img src={web} alt="web" style={{ height: "35px" }} />
-                </Tooltip>
-              </Grid>
-            </Grid>
-          </Box>
+            <img
+              src={pragmatic}
+              alt="pragmatic-energy-web-app"
+              style={{ maxWidth: "100%" }}
+            />
+          </Grid>
         </Grid>
-
+      ) : (
         <Grid
-          item
-          xs={12}
-          md={8}
-          sx={{
-            display: "flex",
-            justifyContent: "flex-start",
-          }}
+          container
+          spacing={6}
+          sx={{ textAlign: "right", paddingBottom: 3 }}
         >
-          <img
-            src={pragmatic}
-            alt="pragmatic-energy-web-app"
-            style={{ maxWidth: "100%" }}
-          />
+          <Grid item xs={12} md={4}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                height: "100%",
+              }}
+            >
+              <Divider color="#a8b2d1" orientation="horizontal" flexItem />
+              <Typography
+                color="#ccd6f6"
+                sx={{
+                  fontFamily: "VT323",
+                  fontWeight: "600",
+                  fontSize: 30,
+                  paddingBottom: 3,
+                  paddingTop: 3,
+                }}
+              >
+                Pragmatic Energy
+              </Typography>
+              <Typography color="#a8b2d1" sx={{ fontSize: 20 }}>
+                A full-stack web application that helps users to find the
+                nearest petrol stations based on their current location.
+                Additionally, users can browse the map to find petrol stations
+                anywhere in Australia, which can save users time and money.
+              </Typography>
+
+              <Grid
+                container
+                spacing={6}
+                sx={{
+                  paddingTop: 3,
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <Grid
+                  item
+                  xs={6}
+                  md={6}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "flex-end",
+                    transition: "transform 0.2s ease-in-out",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                    },
+                  }}
+                >
+                  <Tooltip title="GitHub Repository" placement="bottom">
+                    <a href="https://github.com/TalesPinto/pragmatic-energy">
+                      <img
+                        src={github}
+                        alt="github-pragmatic-energy-app"
+                        style={{ height: "35px" }}
+                      />
+                    </a>
+                  </Tooltip>
+                </Grid>
+                <Grid
+                  item
+                  xs={6}
+                  md={6}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "flex-start",
+                    transition: "transform 0.2s ease-in-out",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                    },
+                  }}
+                >
+                  <Tooltip title="Pragmatic Energy WebPage" placement="bottom">
+                    <a href="https://pragmatic-energy.cyclic.app/">
+                      <img src={web} alt="web" style={{ height: "35px" }} />
+                    </a>
+                  </Tooltip>
+                </Grid>
+              </Grid>
+            </Box>
+          </Grid>
+
+          <Grid
+            item
+            xs={12}
+            md={8}
+            sx={{
+              display: "flex",
+              justifyContent: "flex-start",
+            }}
+          >
+            <img
+              src={pragmatic}
+              alt="pragmatic-energy-web-app"
+              style={{ maxWidth: "100%" }}
+            />
+          </Grid>
         </Grid>
-      </Grid>
+      )}
 
       {isSmallScreen ? (
         <Grid container spacing={6} sx={{ textAlign: "left", paddingTop: 3 }}>
@@ -313,6 +429,95 @@ export default function Projects() {
                   }}
                 >
                   <Tooltip title="Coming soon..." placement="bottom">
+                    <a href="">
+                      <img
+                        src={github}
+                        alt="github-pragmatic-energy-app"
+                        style={{ height: "35px" }}
+                      />
+                    </a>
+                  </Tooltip>
+                </Grid>
+                <Grid
+                  item
+                  xs={6}
+                  md={6}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "flex-start",
+                    transition: "transform 0.2s ease-in-out",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                    },
+                  }}
+                >
+                  <Tooltip title="Coming soon..." placement="bottom">
+                    <a href=""></a>
+                    <img src={web} alt="web" style={{ height: "35px" }} />
+                  </Tooltip>
+                </Grid>
+              </Grid>
+            </Box>
+          </Grid>
+        </Grid>
+      )}
+
+      {isSmallScreen ? (
+        <Grid container spacing={6} sx={{ textAlign: "left", paddingTop: 6 }}>
+          <Grid item xs={12} md={4}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                height: "100%",
+              }}
+            >
+              <Divider color="#a8b2d1" orientation="horizontal" flexItem />
+              <Typography
+                color="#ccd6f6"
+                sx={{
+                  fontFamily: "VT323",
+                  fontWeight: "600",
+                  fontSize: 30,
+                  paddingBottom: 3,
+                  paddingTop: 3,
+                }}
+              >
+                TaskMaster
+              </Typography>
+
+              <Typography color="#a8b2d1" sx={{ fontSize: 20 }}>
+                This full-stack web application provides a collaborative
+                solution for teams to track, manage, and complete tasks. By
+                improving communication and facilitating teamwork, it
+                streamlines the project management process and makes it easier
+                to bring projects to completion.
+              </Typography>
+
+              <Grid
+                container
+                spacing={6}
+                sx={{
+                  paddingTop: 3,
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <Grid
+                  item
+                  xs={6}
+                  md={6}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "flex-end",
+                    transition: "transform 0.2s ease-in-out",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                    },
+                  }}
+                >
+                  <Tooltip title="Coming soon..." placement="bottom">
                     <img
                       src={github}
                       alt="github-pragmatic-energy-app"
@@ -340,108 +545,124 @@ export default function Projects() {
               </Grid>
             </Box>
           </Grid>
-        </Grid>
-      )}
 
-      <Grid container spacing={6} sx={{ textAlign: "right", paddingTop: 6 }}>
-        <Grid item xs={12} md={4}>
-          <Box
+          <Grid
+            item
+            xs={12}
+            md={8}
             sx={{
               display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              height: "100%",
+              justifyContent: "flex-start",
             }}
           >
-            <Divider color="#a8b2d1" orientation="horizontal" flexItem />
-            <Typography
-              color="#ccd6f6"
+            <img
+              src={taskmaster}
+              alt="pragmatic-energy-web-app"
+              style={{ maxWidth: "100%" }}
+            />
+          </Grid>
+        </Grid>
+      ) : (
+        <Grid container spacing={6} sx={{ textAlign: "right", paddingTop: 6 }}>
+          <Grid item xs={12} md={4}>
+            <Box
               sx={{
-                fontFamily: "VT323",
-                fontWeight: "600",
-                fontSize: 30,
-                paddingBottom: 3,
-                paddingTop: 3,
-              }}
-            >
-              TaskMaster
-            </Typography>
-
-            <Typography color="#a8b2d1" sx={{ fontSize: 20 }}>
-              This full-stack web application provides a collaborative solution
-              for teams to track, manage, and complete tasks. By improving
-              communication and facilitating teamwork, it streamlines the
-              project management process and makes it easier to bring projects
-              to completion.
-            </Typography>
-
-            <Grid
-              container
-              spacing={6}
-              sx={{
-                paddingTop: 3,
                 display: "flex",
-                alignItems: "center",
+                flexDirection: "column",
+                justifyContent: "center",
+                height: "100%",
               }}
             >
-              <Grid
-                item
-                xs={6}
-                md={6}
+              <Divider color="#a8b2d1" orientation="horizontal" flexItem />
+              <Typography
+                color="#ccd6f6"
                 sx={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  transition: "transform 0.2s ease-in-out",
-                  "&:hover": {
-                    transform: "scale(1.05)",
-                  },
+                  fontFamily: "VT323",
+                  fontWeight: "600",
+                  fontSize: 30,
+                  paddingBottom: 3,
+                  paddingTop: 3,
                 }}
               >
-                <Tooltip title="Coming soon..." placement="bottom">
-                  <img
-                    src={github}
-                    alt="github-pragmatic-energy-app"
-                    style={{ height: "35px" }}
-                  />
-                </Tooltip>
-              </Grid>
-              <Grid
-                item
-                xs={6}
-                md={6}
-                sx={{
-                  display: "flex",
-                  justifyContent: "flex-start",
-                  transition: "transform 0.2s ease-in-out",
-                  "&:hover": {
-                    transform: "scale(1.05)",
-                  },
-                }}
-              >
-                <Tooltip title="Coming soon..." placement="bottom">
-                  <img src={web} alt="web" style={{ height: "35px" }} />
-                </Tooltip>
-              </Grid>
-            </Grid>
-          </Box>
-        </Grid>
+                TaskMaster
+              </Typography>
 
-        <Grid
-          item
-          xs={12}
-          md={8}
-          sx={{
-            display: "flex",
-            justifyContent: "flex-start",
-          }}
-        >
-          <img
-            src={taskmaster}
-            alt="pragmatic-energy-web-app"
-            style={{ maxWidth: "100%" }}
-          />
+              <Typography color="#a8b2d1" sx={{ fontSize: 20 }}>
+                This full-stack web application provides a collaborative
+                solution for teams to track, manage, and complete tasks. By
+                improving communication and facilitating teamwork, it
+                streamlines the project management process and makes it easier
+                to bring projects to completion.
+              </Typography>
+
+              <Grid
+                container
+                spacing={6}
+                sx={{
+                  paddingTop: 3,
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <Grid
+                  item
+                  xs={6}
+                  md={6}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "flex-end",
+                    transition: "transform 0.2s ease-in-out",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                    },
+                  }}
+                >
+                  <Tooltip title="Coming soon..." placement="bottom">
+                    <img
+                      src={github}
+                      alt="github-pragmatic-energy-app"
+                      style={{ height: "35px" }}
+                    />
+                  </Tooltip>
+                </Grid>
+                <Grid
+                  item
+                  xs={6}
+                  md={6}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "flex-start",
+                    transition: "transform 0.2s ease-in-out",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                    },
+                  }}
+                >
+                  <Tooltip title="Coming soon..." placement="bottom">
+                    <img src={web} alt="web" style={{ height: "35px" }} />
+                  </Tooltip>
+                </Grid>
+              </Grid>
+            </Box>
+          </Grid>
+
+          <Grid
+            item
+            xs={12}
+            md={8}
+            sx={{
+              display: "flex",
+              justifyContent: "flex-start",
+            }}
+          >
+            <img
+              src={taskmaster}
+              alt="pragmatic-energy-web-app"
+              style={{ maxWidth: "100%" }}
+            />
+          </Grid>
         </Grid>
-      </Grid>
+      )}
     </Box>
   )
 }

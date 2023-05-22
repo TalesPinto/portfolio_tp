@@ -14,7 +14,7 @@ export default function Skills() {
     <Box
       sx={{
         marginX: "120px",
-        paddingBottom: 18,
+        paddingBottom: 12,
         [createTheme().breakpoints.down("md")]: {
           marginX: "30px",
         },

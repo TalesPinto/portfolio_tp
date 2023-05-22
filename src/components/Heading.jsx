@@ -19,6 +19,7 @@ export default function Main() {
           sx={{
             fontFamily: "VT323",
             fontSize: 26,
+            paddingTop: 12,
             paddingBottom: 6,
             marginX: "30px",
             [createTheme().breakpoints.up("md")]: {

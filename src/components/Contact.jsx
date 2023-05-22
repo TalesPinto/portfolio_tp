@@ -7,7 +7,11 @@ import {
   ThemeProvider,
   TextField,
   Button,
+  Grid,
+  Tooltip,
 } from "@mui/material"
+import github from "./../icons/github.png"
+import linkedin from "./../icons/linkedin.png"
 
 export default function Contact() {
   const form = useRef()
@@ -45,6 +49,13 @@ export default function Contact() {
       },
     },
   })
+
+  const handleClickResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/1RnI1mu6CA2VH4tItDwJJAQhLymIWtZTJ/view?usp=share_link",
+      "_blank"
+    )
+  }
 
   return (
     <Box
@@ -160,6 +171,63 @@ export default function Contact() {
           </form>
         </Box>
       </ThemeProvider>
+
+      <Grid
+        container
+        spacing={6}
+        sx={{
+          paddingTop: 6,
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Grid
+          item
+          xs={6}
+          md={6}
+          sx={{
+            display: "flex",
+            justifyContent: "flex-end",
+            transition: "transform 0.2s ease-in-out",
+            "&:hover": {
+              transform: "scale(1.05)",
+            },
+          }}
+        >
+          <Tooltip title="GitHub" placement="bottom">
+            <a href="https://github.com/TalesPinto">
+              <img
+                src={github}
+                alt="github-pragmatic-energy-app"
+                style={{ height: "35px" }}
+              />
+            </a>
+          </Tooltip>
+        </Grid>
+        <Grid
+          item
+          xs={6}
+          md={6}
+          sx={{
+            display: "flex",
+            justifyContent: "flex-start",
+            transition: "transform 0.2s ease-in-out",
+            "&:hover": {
+              transform: "scale(1.05)",
+            },
+          }}
+        >
+          <Tooltip title="LinkedIn" placement="bottom">
+            <a href="https://www.linkedin.com/in/talesspinto/">
+              <img
+                src={linkedin}
+                alt="github-pragmatic-energy-app"
+                style={{ height: "35px" }}
+              />
+            </a>
+          </Tooltip>
+        </Grid>
+      </Grid>
     </Box>
   )
 }
