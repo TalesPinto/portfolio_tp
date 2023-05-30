@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio_tp/static/css/main.31d6cfe0.css",
-    "main.js": "/portfolio_tp/static/js/main.adb778ee.js",
+    "main.js": "/portfolio_tp/static/js/main.3c1dbcfe.js",
     "static/media/pragmatic_energy.png": "/portfolio_tp/static/media/pragmatic_energy.e5cd67e7cceeae2c6954.png",
     "static/media/unreal_estate.png": "/portfolio_tp/static/media/unreal_estate.15c7b3363c4a171ab1e4.png",
     "static/media/tales.jpeg": "/portfolio_tp/static/media/tales.66b1ab677017db9c8944.jpeg",
@@ -16,10 +16,10 @@
     "static/media/bootstrap.png": "/portfolio_tp/static/media/bootstrap.c34fd82b951505ccd54d.png",
     "static/media/logo.png": "/portfolio_tp/static/media/logo.f871a70f9ddb2c35a484.png",
     "index.html": "/portfolio_tp/index.html",
-    "main.adb778ee.js.map": "/portfolio_tp/static/js/main.adb778ee.js.map"
+    "main.3c1dbcfe.js.map": "/portfolio_tp/static/js/main.3c1dbcfe.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.adb778ee.js"
+    "static/js/main.3c1dbcfe.js"
   ]
 }
