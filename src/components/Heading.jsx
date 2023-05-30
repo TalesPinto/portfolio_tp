@@ -1,6 +1,5 @@
 import { Typography, Box, Button } from "@mui/material"
-import { createTheme, ThemeProvider } from "@mui/material/styles"
-import { Link } from "react-scroll"
+import { createTheme } from "@mui/material/styles"
 
 export default function Main() {
   const styles = {
@@ -11,6 +10,14 @@ export default function Main() {
       justifyContent: "center",
     },
   }
+
+  const handleClickResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/1lLiGLelOyjKWXl6ldii2KLQUM_3OwJHX/view?usp=share_link",
+      "_blank"
+    )
+  }
+
   return (
     <div style={styles.container}>
       <Box>
@@ -60,29 +67,29 @@ export default function Main() {
         >
           I'm a Software Engineer.
         </Typography>
-        <Link to="projects-id" smooth={true} duration={500} offset={-140}>
-          <Button
-            variant="outlined"
-            sx={{
-              color: "#64ffda",
-              borderColor: "#64ffda",
-              px: 5,
-              marginX: "30px",
-              "&.MuiButton-root:hover": { borderColor: "#64ffda" },
-              borderRadius: 0,
-              mt: 10,
-              fontFamily: ["VT323", "monospace"].join(","),
-              fontSize: 26,
-              textTransform: "none",
-              [createTheme().breakpoints.up("md")]: {
-                fontSize: 30,
-                marginX: "60px",
-              },
-            }}
-          >
-            Check out my projects!
-          </Button>
-        </Link>
+
+        <Button
+          variant="outlined"
+          onClick={handleClickResume}
+          sx={{
+            color: "#64ffda",
+            borderColor: "#64ffda",
+            px: 5,
+            marginX: "30px",
+            "&.MuiButton-root:hover": { borderColor: "#64ffda" },
+            borderRadius: 0,
+            mt: 10,
+            fontFamily: ["VT323", "monospace"].join(","),
+            fontSize: 26,
+            textTransform: "none",
+            [createTheme().breakpoints.up("md")]: {
+              fontSize: 30,
+              marginX: "60px",
+            },
+          }}
+        >
+          Check out my resume!
+        </Button>
       </Box>
     </div>
   )

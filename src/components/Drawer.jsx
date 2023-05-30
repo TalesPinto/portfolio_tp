@@ -43,7 +43,7 @@ function ResponsiveDrawer(props) {
 
   const handleClickResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1RnI1mu6CA2VH4tItDwJJAQhLymIWtZTJ/view?usp=share_link",
+      "https://drive.google.com/file/d/1lLiGLelOyjKWXl6ldii2KLQUM_3OwJHX/view?usp=share_link",
       "_blank"
     )
   }

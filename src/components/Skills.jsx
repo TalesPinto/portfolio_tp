@@ -6,6 +6,7 @@ import psql from "./../icons/psql.png"
 import html from "./../icons/html.png"
 import css from "./../icons/css.png"
 import mui from "./../icons/mui.png"
+import bootstrap from "./../icons/bootstrap.png"
 
 import { createTheme, Box, Grid, Typography, Tooltip } from "@mui/material"
 
@@ -152,6 +153,21 @@ export default function Skills() {
         >
           <Tooltip title="Material UI" placement="bottom">
             <img src={mui} alt="material-ui" style={{ height: "50px" }} />
+          </Tooltip>
+        </Grid>
+        <Grid
+          item
+          xs={4}
+          md={3}
+          sx={{
+            transition: "transform 0.2s ease-in-out",
+            "&:hover": {
+              transform: "scale(1.1)",
+            },
+          }}
+        >
+          <Tooltip title="Bootstrap" placement="bottom">
+            <img src={bootstrap} alt="bootstrap" style={{ height: "50px" }} />
           </Tooltip>
         </Grid>
       </Grid>
